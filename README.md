@@ -8,4 +8,4 @@ Repositori ini merupakan sebuah repositori untuk klasifikasi daun sirih dengan d
 
 ## Cara kerja Web
 
-<p align="center"><img src="static/Picture.PNG" alt="logo" width="150px"/></p>
+<p align="center"><img src="./static/Picture.PNG" alt="logo" width="150px"/></p>
