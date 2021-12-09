@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Classification</title>
+  <link rel="icon" href="static/icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="static/styles.css" />
+</head>
+
+<body>
+  <div class="containers">
+    <h1>
+      <center>Image Classification Using Flask</center>
+    </h1>
+    <form action="" met method="post" enctype="multipart/form-data" class="flex flex-col">
+      <div class="columns">
+        <div class="containers1">
+          <div class="container">
+            <h3>Upload your File :</h3>
+            <div class="drag-area">
+              {% if uploaded_image %}
+              <img src="{{ url_for('send_uploaded_image', filename=uploaded_image) }}" />
+              {% else %}
+              <div class="icon">
+                <i class="fas fa-images"></i>
+              </div>
+              <span class="header">No file chosen, yet!</span>
+              <span class="support">Silahkan upload gambar kemudian submit.</span>
+              {% endif %}
+            </div>
+          </div>
+          <div class="buttons">
+            <input type="file" id="file" name="image"></input>
+            <label for="file" class="default-btn">
+              <p>UPLOAD</p>
+            </label>
+            <button id="chooseFile" class="default-btn" type="submit">
+              <p>SUBMIT</p>
+            </button>
+          </div>
+        </div>
+        <div class="containers1">
+          <h3>Hasil Prediksi :</h3>
+          <div class="drag-area1">
+            {% if prediction %}
+            <span class="header">{{prediction}}</span>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
