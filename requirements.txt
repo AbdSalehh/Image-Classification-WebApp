@@ -3,4 +3,4 @@ tensorflow-cpu
 gunicorn
 pillow
 numpy
-opencv-python==4.5.4.58
+opencv-python-headless
