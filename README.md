@@ -1,3 +1,4 @@
+<div id="top"></div>
 <h1 align="center" >Deployment Model CNN (Daun Sirih dan Daun Nangka)</h1>
 
 ## Deskripsi singkat
@@ -16,7 +17,7 @@ Web ini merupakan sebuah web yang mengimplementasikan kecerdasan buatan untuk me
 
 Jika anda ingin mencoba, klik [disini](https://classification-ai.herokuapp.com/) untuk diarahkan ke halaman website yang sudah kami buat tersebut .
 
-<h3 align="center" >Terima Kasih</h3>
+<h3 align="center" >Terima Kasih</h3>  <p align="right">(<a href="#top">Scroll ke atas</a>)</p>
 
 
 
